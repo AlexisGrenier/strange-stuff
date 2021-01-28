@@ -1,0 +1,19 @@
+Z indexes : 
+
+
+#right_bar -7
+sun : -6
+bg-gradient : -5
+bg-smoke : -4
+scene : -3
+container : -2
+fake-scene-container: 10;
+top-nav : 11;
+item-4 : 4
+#news-container: 300;
+#tours-container: 301;
+#radio-player: 302;
+header:200;
+sky-title: 
+intro-video: 500;
+item-4:200
