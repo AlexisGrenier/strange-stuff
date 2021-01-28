@@ -1,0 +1,75 @@
+#tours-container{
+    position: fixed;
+    z-index: 301;
+    display: none;
+    transform: translate(-52%,-52%);
+    top: 52%;
+    left: 52%;
+    z-index: 300;
+}
+.standard-article-tours{
+    padding: .4em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    color: rgb(255, 255, 255);
+
+    padding: .4em;
+    margin-bottom: em;
+    border-bottom: 1px solid #ffffff6b;
+    padding-bottom: 1em;
+
+    h2{
+        margin-bottom: .5em;
+    }
+    p{
+        margin-bottom: .8em;
+        margin-top: .8em;
+    }
+}
+.article-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $font-display-title;
+    font-size: 3em;
+    line-height: .8em;
+}
+    .article-date {
+        font-family: $font-text;
+        font-size: .8em;
+        line-height: 1em;
+    }
+    
+    .article-date span::after{
+        content: "\00a0—\00a0";
+    }
+    .tickets{
+        margin-top: 1em;
+    }
+    .tickets a{
+        font-family: $font-text;
+        text-decoration: none;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 2px;
+        padding: .2em;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        &:hover{
+            background-color: black;
+            color: blanchedalmond;
+        }
+    }
+    ::-moz-selection { /* Code for Firefox */
+        color: blanchedalmond;
+        background: black;
+      }
+      
+      ::selection {
+        color: blanchedalmond;
+        background: black;
+      }
+      @media only screen and (min-width: 720px){
+        #tours-container{
+            width: 240px;
+            min-width: 320px;
+        }
+    }

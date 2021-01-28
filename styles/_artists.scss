@@ -1,0 +1,58 @@
+
+#artists-body{
+
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 68%, rgba(40,0,255,1) 94%, rgba(3,3,32,1) 97%, rgba(40,0,255,1) 100%);
+}
+#artists-wrapper{
+    margin: 180px auto;
+    max-width: 900px;
+    display:flex;
+    padding:1em;
+    ul{
+        list-style-type: none;
+        li{
+            width: fit-content;
+            display: inline-flex;
+            flex-flow: row wrap;
+            a{
+                font-family: $font-display-title;
+                font-weight: 900;
+                font-size: 5vw;
+                text-decoration: none;
+                line-height: 1em;
+                text-transform: uppercase;
+                word-break: break-word;
+                color: rgb(0, 0, 0);
+                hyphens: auto;
+                    &:hover{
+                        color: white;
+                        text-shadow:
+                            0 0 5px rgb(0, 255, 255),
+                            0 0 10px rgb(0, 255, 255),
+                            0 0 20px rgb(0, 255, 255),
+                            0 0 40px #0ff,
+                            0 0 80px #0ff,
+                            0 0 90px #0ff,
+                            0 0 100px #0ff,
+                            0 0 110px #0ff,
+                            0 0 130px rgb(0, 140, 255),
+                            0 0 150px rgb(0, 140, 255);   
+                    }
+            }::after{content:"\0020	–\0020"}
+
+        }
+    }
+}
+@media screen and (max-width:720px)  {
+    #artists-wrapper ul li{
+        flex-flow: row nowrap;
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 80px;
+            &:hover{
+                color: white;
+            }
+        }
+    } 
+}

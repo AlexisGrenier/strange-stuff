@@ -1,0 +1,303 @@
+@import '_fonts.scss';
+
+#panorama-controls{
+    display: flex;
+    // position: fixed; DOESNT FONC WHEN MOBILE TOUCH
+    position: absolute;
+    width: 90%;
+    height: max-content;
+    transform: translate(-50%, -95%);
+    top: 95%;
+    left:50%;
+    justify-content: space-between;
+    z-index: 300;
+    flex-flow: row nowrap;
+
+    .panorama-control-btn{
+        width: 86px;
+        height: 86px;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+    }
+
+    #go-left{
+        flex: 0 0 auto;
+        background: url(../icons/control-icons/control-icon-left-arrow.svg);
+        background-color: rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+    }
+    #go-right{
+        flex: 0 0 auto;
+        background: url(../icons/control-icons/control-icon-right-arrow.svg);
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    
+}
+@media screen and (min-width: 1080px){
+    #panorama-controls{
+        display:none;
+    }
+}
+#home-body{
+    background-image: url(../img/bg-test-01.png);
+}
+.terra{
+    height: max-content;
+    margin-top: 4em;
+
+}
+.container{
+    // position: fixed; DISFUNC ON MOB TOUCH
+    padding: 0;
+    box-sizing: border-box;
+    z-index: -2;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-image: url(../img/terrain7.svg);
+    background-origin: padding-box;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+.items {
+    box-sizing: border-box;
+    // align-self: center; DYSFUNC WHEN MOB TOUCH
+    align-self: start;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 20px auto; 
+
+}
+.items img{
+    margin: 0 auto;
+}
+[class^='item-']{
+    width: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    border: 20px solid rgba(8, 138, 58, 0);
+    align-self: flex-end;
+    h1{
+        font-size: 64px;
+        margin: 0 auto;
+        width: 360px;
+        line-height: 2em;
+        text-transform: uppercase;
+        color: #fff;
+        -webkit-text-stroke-width: 30px;
+        -webkit-text-stroke-color: rgb(255, 0, 0);
+        text-shadow:
+            0 0 5px rgb(0, 255, 255),
+            0 0 10px rgb(0, 255, 255),
+            0 0 20px rgb(0, 255, 255),
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 110px #0ff,
+            0 0 130px rgb(0, 140, 255),
+            0 0 150px rgb(0, 140, 255);   
+     }
+}
+
+#main-title {
+
+        text-shadow:
+            0 0 5px rgb(0, 255, 255),
+            0 0 10px rgb(0, 255, 255),
+            0 0 20px rgb(0, 255, 255),
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 110px #0ff,
+            0 0 130px rgb(0, 140, 255),
+            0 0 150px rgb(0, 140, 255);
+            -moz-text-shadow:            
+             0 0 5px rgb(0, 255, 255),
+            0 0 10px rgb(0, 255, 255),
+            0 0 20px rgb(0, 255, 255),
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 110px #0ff,
+            0 0 130px rgb(0, 140, 255),
+            0 0 150px rgb(0, 140, 255);;
+}   
+#main-title h1 {
+    font-family: $font-display-title;
+}
+@media screen and (min-width: 320px){
+    .sky-title {
+        display: none;
+    }
+    .illustration{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1080px){
+
+    .container{
+        margin: 1em auto 0 auto;
+    }
+
+    .sky-title {
+        display: initial;
+        z-index: 0;
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        width: 100%;
+        height: 20%;
+    }
+}
+
+.illustration {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.img-item{
+    cursor: pointer;
+}
+.illustration > img, .illustration > a{
+    width: 300px;
+    position: absolute;
+    margin: 0 auto;  
+    align-self: center;
+}
+.illustration > img:hover, a > img:hover {
+    filter:
+    drop-shadow(0 0 15px rgb(0, 255, 255))
+    drop-shadow(0 0 100px rgb(0, 255, 255))
+        ;
+    -webkit-filter: 
+    drop-shadow(0 0 15px rgb(0, 255, 255))
+    drop-shadow(0 0 100px rgb(0, 255, 255)); 
+}
+@media only screen and (min-width: 1080px) {
+    #illustration-1s, #illustration-2s, #illustration-3s, #illustration-4s, #illustration-5s, #illustration-6s, #illustration-7s {
+        display: none;
+    }
+    .panorama-title{
+        display: none;
+    }
+    .items {
+        height: 75%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        bottom: 0;
+    }
+    [class^='item-']{
+        width: 10%;
+        min-height: 50%;
+    }
+        .item-1{
+            order: 1;
+            flex-basis: 40%;
+            cursor: pointer;
+            img{
+                transform: translate(-25%, 25%);
+            }
+        }
+        .item-4 {
+            z-index: 4;
+            img {
+            transform: scale(1.8)   ;
+            margin-bottom: 100px;
+            }
+        }
+        .item-7{
+            order: 7;
+            flex-basis: 40%;
+            img{
+                transform: translate(50%, 50%)scale(1.5);
+            }
+        }
+        .flotte{
+            animation-name : pyramide;
+            animation-duration : 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes pyramide {
+            0% { transform: translate3d(0px,0px,0px); }
+            100% { transform: translate3d(0px,8px,0px);}
+        }
+}
+// VIDEOS STYLING
+
+  /* Add some content at the bottom of the video/page */
+  .skipBtn-container {
+    position: fixed;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 501;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #skipBtn {
+
+    font-family: $font-text;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.2);
+
+    cursor: pointer;
+        &:hover {
+            background: #ddd;
+            color: black;
+            border: 1px solid black;
+
+        } 
+  }
+    #intro-video{
+        z-index: 500;
+    }
+    /* Style the video: 100% width and height to cover the entire window */
+    .full-screen-video {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+    }
+  

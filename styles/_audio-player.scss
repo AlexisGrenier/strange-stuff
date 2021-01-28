@@ -1,0 +1,207 @@
+@import '_reset.scss';
+#radio-player, #tours-container, #news-container{
+    background: rgba(0, 0, 0, 0.94);
+    box-shadow:
+    0 0 5px rgb(0, 255, 255),
+    0 0 10px rgb(0, 255, 255),
+    0 0 20px rgb(0, 255, 255),;
+    &:hover{
+        background: rgba(0, 0, 0, 0.904);
+        box-shadow:
+        0 0 5px rgb(0, 255, 255),
+        0 0 10px rgb(0, 255, 255),
+        0 0 20px rgb(0, 255, 255),
+        0 0 25px rgb(0, 255, 255),
+        0 0 30px rgb(0, 255, 255);
+    }
+}
+#radio-player{
+    z-index:302;
+}
+#body-container-tour {
+    background-color: rgb(0, 0, 0);
+}
+.modal-window {
+    box-sizing: border-box;
+    position: fixed;
+    width: 80%;
+    height: 60%;
+    padding: .2em .3em;
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    display:none;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: .2em;
+    justify-content: start;
+        .header-modal {
+            box-sizing: border-box;
+            min-height: max-content;
+            background-color: black;
+            padding: 4px;
+            flex:1 auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            max-height: 40px;
+                .logo-modal{
+                    box-sizing: border-box;
+                    height: 30px;
+                    font-size: 1.3em;
+                    flex: 2;
+                    display: flex;
+                    align-items: center;
+                    min-width: max-content;
+                    margin-right: 1em;
+                        h1,h2,h3,h4,h5,h6 {
+                            color: white;
+                            font-family: $font-display-title;
+                        }
+                }
+                .grabber{
+                    box-sizing: border-box;
+                    border-radius: .3em;
+                    height: 30px;
+                    flex: 1 100%;
+                    background: rgb(0, 0, 0);
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23f8f6fb' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");                }
+                }
+                .close{
+                    box-sizing: border-box;
+                    height: 28px;
+                    width: 28px;
+                    margin-left: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex;
+                    .closeBtn  {
+                        background: url(../icons/closeBtn-1-icon.svg);
+                        background-repeat: no-repeat;
+                        width: 30px;
+                        height: 30px;
+                        display: block;
+                        cursor: pointer;
+                        &:hover{
+                            background: url(../icons/closeBtn-2-icon.svg);
+                        }
+                    }
+                }
+        }
+#infos-player {
+    flex:1 58px;
+    width: 60%;
+    height: max-content;
+    .info-player-items {
+        display: flex;
+        flex-flow: row wrap;
+        align-content:baseline;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 2px;
+        p{
+            font-family: $font-text;
+            font-size: 10px;
+            margin:4px;
+            color: white;
+            color:white;
+        }
+        #current-title, #current-artist{
+            font-size: 1em;
+        }
+    }
+}
+#audio-wave-player{ 
+    box-sizing: border-box;
+    flex:2 58px;
+    width: 100%;
+    margin-top: .2em;
+    padding: 4px;
+    border-radius: .3em;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255) inset;
+    background-color:rgb(0, 0, 0)
+}
+#controls-player{
+    flex: 1 38px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 4px;
+    cursor:pointer;
+    .control-player{
+        width: 32px;
+        height: 32px;
+        border: 1px solid white;
+        border-radius: .3em;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: .4em;
+        &:hover{
+            box-shadow: 0px 0px 10px rgb(255, 255, 255) inset;
+        }
+    }
+    #radio-player-btn-previous{
+        background-image: url(../icons/radio-icons/radio-icons-prevBtnRadio.svg);
+    }
+    #radio-player-btn-play{
+        background-image: url(../icons/radio-icons/radio-icons-playBtnRadio.svg);
+    }
+    #radio-player-btn-pause{
+        background-image: url(../icons/radio-icons/radio-icons-pauseBtnRadio.svg);
+    }
+    #radio-player-btn-next{
+        background-image: url(../icons/radio-icons/radio-icons-nextBtnRadio.svg);
+    }
+    #radio-player-btn-like{
+        background-image: url(../icons/radio-icons/radio-icons-likeBtnRadio.svg);
+    }
+    #radio-player-btn-mute{
+        background-image: url(../icons/radio-icons/radio-icons-unMuteBtnRadio.svg);
+        &:hover{
+            background-image: url(../icons/radio-icons/radio-icons-muteBtnRadio.svg);
+        }
+    }
+    input[type=range][orient=vertical]{
+        -webkit-appearance: slider-vertical;
+        writing-mode: bt-lr;// ie vertical imput
+        padding: .5em;
+        position: absolute;
+        bottom: 1.8em;
+        right: 10px;
+        height: 6em;
+        width: 49px;
+        background: #D5CCBB;
+        color: black;
+    }
+}
+#sc-attribution-api{
+    display: inline-flex;
+    opacity: .5;
+    justify-content: flex-end;
+    img{
+        width: 2.8em;
+    }
+    p{
+        color: white;
+        font-size: .5em;
+        font-family: $font-text;
+    }
+}
+@media only screen and (min-width: 720px){
+    #radio-player{
+        width: 240px;
+        min-width: 320px;
+        height: 300px;
+    }
+    #radio-player, #tours-container, #news-container{
+        background: rgba(0, 0, 0, 0.76);
+    }
+}
+@media only screen and (min-width: 1080px){
+    #radio-player{
+        transform: none;
+    }
+}
