@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jlq2xws.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" defer></script>
+  <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js" defer></script>
+  <link rel="stylesheet" type="text/css" 
+    href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+</head>
+<body id='body-strange-tv'>
+  <header>
+        <nav id="top-nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logoSS.svg" alt="">
+                </a>
+            </div>
+            <div class="burger-icon-container">
+                <span class="burger-icon"></span>
+            </div>
+            <ul class="hidden-menu">
+                <li id="menu-li-radio">RADIO</li>
+                <li><a href="strange-stuff-rec-artists.html">ARTISTS</a></li>
+                <li><a href="strange-stuff-rec-tv.html">VIDEOS</a></li>
+                <li id="menu-li-tours">TOURS</li>
+                <li id="menu-li-news">NEWS</li>
+                <li><a href="strange-stuff-rec-shop.html">SHOP</a></li>
+                <li><a href="strange-stuff-rec-contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+  </header>
+<!-- START FAKE SCREEN -->
+    <div id="fakeScreenContainer">
+        <div id="top_bar">
+            <img src="../img/top.svg" alt="">
+        </div>
+
+        <div id="left_bar">
+        </div>
+        <div id="right_bar">
+        </div>
+
+        <div id="bottom_bar">
+            <img src="../img/bottom.svg" alt="">
+        </div>
+    </div>
+<!-- END FAKE SCREEN -->
+
+<!-- START VIDEO CODE -->
+<main>
+<section id="videos-container">
+    <!-- YOUTUBE EMBEDDED VIDEO -->
+    <div class="video-item-tv">
+        <!-- iframe should be at width:100% -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VNQrGYZiFyk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <aside class="video-infos">
+            <h3>This stuff is good</h3>
+        <p>Damn right it's good and there is more. He's the Bard. He's the man. He's got a quote for every mood or occasion. I come to bury Caesar, not to praise him. — from Julius Caesar
+        </p><br>
+        <p>by : <span>Aby Fulani</span></p>
+        <p>year: <span>2017</span></p>
+        </aside>
+        
+    </div>
+    <div class="video-item-tv">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/csu0W59r-pQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- YOUTUBE EMBEDDED VIDEO -->
+    <!-- VIMEO EMBEDDED VIDEO -->
+    <div class="video-item-tv">
+    <iframe src="https://player.vimeo.com/video/285696782" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <!-- VIMEO EMBEDDED VIDEO -->
+
+
+</section>
+
+<!-- END VIDEO CODE  -->
+<!-- MODAL TOURS -->
+<section class="modal-window ui-widget-content" id="tours-container">
+    <div class="header-modal">
+        <div class="logo-modal">
+            <h2>TOURS</h2>
+        </div>
+        <div class="grabber">           
+        </div>
+        <div class="close">
+            <span class="closeBtn"></span>
+        </div>
+    </div>
+    <div id="body-container-tour">
+        <iframe id="my-news-modal" src="../strange-stuff-rec-tours.html" width="100%" height="500px" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+</section>
+<!-- END MODAL TOURS -->
+<!-- MODAL RADIO -->
+<section class="modal-window ui-widget-content" id="radio-player">
+    <div class="header-modal">
+        <div class="logo-modal">
+            <h3>Strange Station</h3>
+        </div>
+        <div class="grabber">
+            <img src="" alt="">
+        </div>
+        <div class="close">
+            <span class="closeBtn" id="radio-close-btn"></span>
+        </div>
+    </div>
+    <div id="audio-wave-player">
+    </div>
+    <div id="infos-player">
+        <div class="info-player-items" id="duration">
+            <p id="current-title-duration"></p>
+            <p id="duration-title"></p></p>
+        </div>
+        <div class="info-player-items" id="title-artiste">
+            <p id="current-title"></p>
+            <p>by</p>
+            <p id="current-artist"></p>
+        </div>
+    </div>
+    <div id="controls-player">
+        <div class="control-player" id="radio-player-btn-previous"></div>
+        <div class="control-player" id="radio-player-btn-play"></div>
+        <div class="control-player" id="radio-player-btn-pause"></div>
+        <div class="control-player" id="radio-player-btn-next"></div>
+        <div class="control-player" id="radio-player-btn-like"></div>
+        <div class="control-player" id="radio-player-btn-mute"></div>
+        <div>
+            <input type="range" id="radio-volume-selector" min="0" max="100" value="50" label="volume-radio" orient="vertical">
+        </div>
+    </div>
+    <div id="sc-attribution-api">
+        <p>powered with</p>
+        <img src="../icons/social-icons/social-_soundcloud-logo-w-plain.svg" alt="">
+    </div>
+</section>
+<!-- END MODAL RADIO -->
+<!-- START SOUND CLOUD EMBEDDED -->
+<div id="soundcloud-iframe">
+    <iframe hidden="true" id="sc-widget" auto_play="false" width="10px" height="10" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/240891213&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <!-- <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/abyfulani" title="Aby Fulani" target="_blank" style="color: #cccccc; text-decoration: none;">Aby Fulani</a> · <a href="https://soundcloud.com/abyfulani/sets/cosmogonic-tales-ep" title="Cosmogonic Tales EP" target="_blank" style="color: #cccccc; text-decoration: none;">Cosmogonic Tales EP</a></div> -->
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript" defer></script>
+</div>
+<!-- END SOUND CLOUD EMBEDDED -->
+<!-- START MODAL NEWS -->
+<section id="news-container" class="modal-window ui-widget-content">
+<div class="header-modal">
+     <div class="logo-modal" id="c-1">
+         <h2>strange news</h2>
+     </div>
+        <div class="grabber" id="c-2">           
+        </div>
+        <div class="close" id="c-3">
+            <span class="closeBtn"></span>
+        </div>
+    </div>
+    <div>
+        <iframe src="../strange-stuff-rec-news.html" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+</section>
+<!-- END MODAL NEWS -->
+
+<!-- START SCRIPTS -->
+<script src="../js/soundcloud-widget.js" defer></script>
+<script src="../js/galleryNextAndPrev.js" defer></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+<script src="../js/toggleMenu.js" defer></script>
+<script src="../js/draggableAndResizable.js" defer></script>
+<script src="../js/closeModal.js" defer></script>
+<script src="../js/openSideNav.js" defer></script>
+<!-- END SCRIPTS -->
+
+</body>
+</html>
