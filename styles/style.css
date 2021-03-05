@@ -665,7 +665,7 @@ header {
 }
 
 #main-title h1 {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -724,8 +724,8 @@ header {
 }
 
 .illustration > img:hover, a > img:hover {
-  filter: drop-shadow(0 0 15px cyan) drop-shadow(0 0 100px cyan);
-  -webkit-filter: drop-shadow(0 0 15px cyan) drop-shadow(0 0 100px cyan);
+  filter: drop-shadow(0 0 1px cyan);
+  -webkit-filter: drop-shadow(0 0 1px cyan);
 }
 
 @media only screen and (min-width: 1080px) {
@@ -895,24 +895,26 @@ header {
 #body-container-news .standard-article .article-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
-  font-size: 3em;
-  line-height: .8em;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-size: 4em;
+  line-height: .9em;
 }
 
 #body-container-news .standard-article .sub-heading {
   margin-top: .4em;
-  font-size: 2em;
-  line-height: .8em;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: .9em;
   margin-bottom: 0em;
   font-family: source-code-pro, Consolas, Lucida Console, Lucida Sans Typewriter, "Century Gothic", Calibri, Arial;
 }
 
 #body-container-news .standard-article .article-date {
   display: inline;
-  margin-top: .8em;
+  margin-top: .9em;
   font-size: 1em;
   font-family: source-code-pro, Consolas, Lucida Console, Lucida Sans Typewriter, "Century Gothic", Calibri, Arial;
+  line-height: .9em;
 }
 
 #body-container-news .standard-article .article {
@@ -920,6 +922,7 @@ header {
   font-size: 1.2em;
   padding-top: .5em;
   padding-bottom: .5em;
+  line-height: 1em;
 }
 
 #body-container-news .standard-article ::-moz-selection {
@@ -974,7 +977,7 @@ header {
 .article-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   font-size: 3em;
   line-height: .8em;
 }
@@ -1059,7 +1062,7 @@ header {
 }
 
 #artists-wrapper ul li a {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   font-weight: 900;
   font-size: 5vw;
   text-decoration: none;
@@ -1440,6 +1443,22 @@ template {
   display: none;
 }
 
+.main-mute-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-left: 2em;
+  padding: .4em;
+}
+
+.main-mute-btn:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 3em;
+}
+
 #radio-player, #tours-container, #news-container {
   background: rgba(0, 0, 0, 0.94);
   -webkit-box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
@@ -1534,7 +1553,7 @@ template {
 
 .modal-window .header-modal .logo-modal h1, .modal-window .header-modal .logo-modal h2, .modal-window .header-modal .logo-modal h3, .modal-window .header-modal .logo-modal h4, .modal-window .header-modal .logo-modal h5, .modal-window .header-modal .logo-modal h6 {
   color: white;
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
 }
 
 .modal-window .header-modal .grabber {
@@ -1684,11 +1703,11 @@ template {
   background-image: url(../icons/radio-icons/radio-icons-likeBtnRadio.svg);
 }
 
-#controls-player #radio-player-btn-mute {
+#controls-player .radio-player-btn-mute {
   background-image: url(../icons/radio-icons/radio-icons-unMuteBtnRadio.svg);
 }
 
-#controls-player #radio-player-btn-mute:hover {
+#controls-player .radio-player-btn-mute:hover {
   background-image: url(../icons/radio-icons/radio-icons-muteBtnRadio.svg);
 }
 
@@ -2121,7 +2140,7 @@ template {
 }
 
 #artists-wrapper ul li a {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   font-weight: 900;
   font-size: 5vw;
   text-decoration: none;
@@ -2502,6 +2521,22 @@ template {
   display: none;
 }
 
+.main-mute-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-left: 2em;
+  padding: .4em;
+}
+
+.main-mute-btn:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 3em;
+}
+
 #radio-player, #tours-container, #news-container {
   background: rgba(0, 0, 0, 0.94);
   -webkit-box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
@@ -2596,7 +2631,7 @@ template {
 
 .modal-window .header-modal .logo-modal h1, .modal-window .header-modal .logo-modal h2, .modal-window .header-modal .logo-modal h3, .modal-window .header-modal .logo-modal h4, .modal-window .header-modal .logo-modal h5, .modal-window .header-modal .logo-modal h6 {
   color: white;
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
 }
 
 .modal-window .header-modal .grabber {
@@ -2746,11 +2781,11 @@ template {
   background-image: url(../icons/radio-icons/radio-icons-likeBtnRadio.svg);
 }
 
-#controls-player #radio-player-btn-mute {
+#controls-player .radio-player-btn-mute {
   background-image: url(../icons/radio-icons/radio-icons-unMuteBtnRadio.svg);
 }
 
-#controls-player #radio-player-btn-mute:hover {
+#controls-player .radio-player-btn-mute:hover {
   background-image: url(../icons/radio-icons/radio-icons-muteBtnRadio.svg);
 }
 
@@ -2892,7 +2927,7 @@ template {
 #body-profil-artist #artist-page-wrapper #side-nav .side-nav-li ul li a {
   position: relative;
   z-index: 9;
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   font-weight: 900;
   font-size: 4em;
   text-decoration: none;
@@ -2935,7 +2970,7 @@ template {
 }
 
 #body-profil-artist #artist-profil-container .article-profil-sections h3 {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -3106,9 +3141,9 @@ template {
 }
 
 #body-profil-artist #artist-profil-container #artist-bio h1 {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   text-transform: uppercase;
-  margin: 0;
+  margin: 34.56px 0;
   font-size: 30vw;
   line-height: 0.8em;
   color: white;
@@ -3201,9 +3236,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 #body-profil-artist #artist-profil-container #artist-social #social-media-icons-container .social-media-icon {
@@ -3291,7 +3326,7 @@ template {
 
 #videos-container {
   background-color: black;
-  margin-top: 300px;
+  margin-top: 160px;
 }
 
 #videos-container .video-item-tv {
@@ -3307,8 +3342,8 @@ template {
 }
 
 #videos-container .video-item-tv .video-infos h3 {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
-  font-size: 1.2em;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-size: 1.8em;
   margin: .2em 0;
   padding: 0;
 }
@@ -3388,7 +3423,7 @@ template {
 }
 
 #main-contact #contact-form form #form-header h1 {
-  font-family: "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
+  font-family: abolition, "Obrazec", source-code-pro, "Stalinist One", Sarpanch, Arial, sans-serif;
   font-size: 2em;
   letter-spacing: .05em;
 }

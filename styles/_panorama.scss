@@ -193,12 +193,11 @@
 }
 .illustration > img:hover, a > img:hover {
     filter:
-    drop-shadow(0 0 15px rgb(0, 255, 255))
-    drop-shadow(0 0 100px rgb(0, 255, 255))
+    drop-shadow(0 0 1px rgb(0, 255, 255))
         ;
     -webkit-filter: 
-    drop-shadow(0 0 15px rgb(0, 255, 255))
-    drop-shadow(0 0 100px rgb(0, 255, 255)); 
+    drop-shadow(0 0 1px rgb(0, 255, 255))
+    ; 
 }
 @media only screen and (min-width: 1080px) {
     #illustration-1s, #illustration-2s, #illustration-3s, #illustration-4s, #illustration-5s, #illustration-6s, #illustration-7s {

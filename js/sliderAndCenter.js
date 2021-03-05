@@ -1,9 +1,20 @@
   let mainTitle = document.getElementById('main-title');
-
-  // const container = document.getElementById('container');
   const panoramaItemsContainer = document.getElementById('panorama-item-container');
   console.log(panoramaItemsContainer);
+
+  // Jquery variables
+  const $illustration1s = $('#illustration-1s');
+  const $illustration2s = $('#illustration-2s');
+  const $illustration3s = $('#illustration-3s');
+  const $illustration4s = $('#illustration-4s');
+  const $illustration5s = $('#illustration-5s');
+  const $illustration6s = $('#illustration-6s');
+  const $illustration7s = $('#illustration-7s');
   
+const $toursContainer = $('#tours-container');
+const $newsContainer = $('#news-container');
+const $radioPlayer = $('#radio-player');
+
   // MOUSE OVER
   panoramaItemsContainer.addEventListener('mouseover', (event) =>{
       let target = event.target;
@@ -14,32 +25,32 @@
       switch(target.id) {
           case 'illustration-1' :
             mainTitle.textContent = 'ON TOUR';
-                        $('#illustration-1s').fadeIn();
+            $illustration1s.fadeIn();
 
             break;
           case 'illustration-2' :
             mainTitle.textContent = 'SHOP';
-                        $('#illustration-2s').fadeIn();
+            $illustration2s.fadeIn();
           break;
           case 'illustration-3' :
-            mainTitle.textContent = 'STRANGE NEWS';
-                        $('#illustration-3s').fadeIn();
+            mainTitle.textContent = 'NEWS';
+            $illustration3s.fadeIn();
           break;
           case 'illustration-4' :
-            mainTitle.textContent = 'STRANGE STATION';
-                        $('#illustration-4s').fadeIn();
+            mainTitle.textContent = 'RADIO';
+            $illustration4s.fadeIn();
           break;
           case 'illustration-5' :
             mainTitle.textContent = 'VIDEOS';
-                        $('#illustration-5s').fadeIn();
+            $illustration5s.fadeIn();
           break;
           case 'illustration-6' :
             mainTitle.textContent = 'CONTACT';
-                        $('#illustration-6s').fadeIn();
+            $illustration6s.fadeIn();
           break;
           case 'illustration-7' :
             mainTitle.textContent = 'THE CREW';
-                        $('#illustration-7s').fadeIn();
+            $illustration7s.fadeIn();
           break;
       }
   
@@ -52,55 +63,40 @@
     // console.log('Mouse out '+ 'target is '+target.id);
     switch(target.id) {
       case 'illustration-1' :
-                    $('#illustration-1s').fadeOut();
+        $illustration1s.fadeOut();
         break;
       case 'illustration-2' :
-                    $('#illustration-2s').fadeOut();
+        $illustration2s.fadeOut();
       break;
       case 'illustration-3' :
-                    $('#illustration-3s').fadeOut();
+                    $illustration3s.fadeOut();
       break;
       case 'illustration-4' :
-                    $('#illustration-4s').fadeOut();
+                    $illustration4s.fadeOut();
       break;
       case 'illustration-5' :
-                    $('#illustration-5s').fadeOut();
+                    $illustration5s.fadeOut();
       break;
       case 'illustration-6' :
-                    $('#illustration-6s').fadeOut();
+                    $illustration6s.fadeOut();
       break;
       case 'illustration-7' :
-                    $('#illustration-7s').fadeOut();
+                    $illustration7s.fadeOut();
       break;
   }
-
   });
-
 // MOUSE CLICK
 panoramaItemsContainer.addEventListener('click', (event) =>{
   let target = event.target;
   switch(target.id){
     case 'illustration-1' :
-      $('#tours-container').css('display','flex');
+      $toursContainer.css('display','flex');
             break;
-    case 'illustration-2' :
-
-          break;
     case 'illustration-3' :
-      $('#news-container').css('display','flex');
-
+      $newsContainer.css('display','flex');
           break;
     case 'illustration-4' :
-      $('#radio-player').css('display','flex');
-
+      $radioPlayer.css('display','flex');
           break;
-    case 'illustration-5' :
-          
-          break;
-    case 'illustration-6' :
-          
-          break;
-    case 'illustration-7' :
-          
-          break;  }
+         }
 });

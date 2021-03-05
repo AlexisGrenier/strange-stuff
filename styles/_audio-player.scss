@@ -1,4 +1,17 @@
 @import '_reset.scss';
+.main-mute-btn{
+    width:50px;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    margin-left:2em;
+    padding:.4em;
+
+    &:hover{
+    transition: .2s;
+    border-radius: 3em;
+    }
+}
 #radio-player, #tours-container, #news-container{
     background: rgba(0, 0, 0, 0.94);
     box-shadow:
@@ -158,7 +171,7 @@
     #radio-player-btn-like{
         background-image: url(../icons/radio-icons/radio-icons-likeBtnRadio.svg);
     }
-    #radio-player-btn-mute{
+    .radio-player-btn-mute{
         background-image: url(../icons/radio-icons/radio-icons-unMuteBtnRadio.svg);
         &:hover{
             background-image: url(../icons/radio-icons/radio-icons-muteBtnRadio.svg);

@@ -18,9 +18,8 @@
     src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js" defer></script>
   <link rel="stylesheet" type="text/css" 
     href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
-
 </head>
-<body id="artists-body">
+<body id="body-profil-artist">
   <header>
         <nav id="top-nav">
             <div class="logo">
@@ -46,19 +45,24 @@
         <div id="top_bar">
             <img src="../img/top.svg" alt="">
         </div>
+
         <div id="left_bar">
         </div>
         <div id="right_bar">
         </div>
+
         <div id="bottom_bar">
             <img src="../img/bottom.svg" alt="">
         </div>
     </div>
-    <section id="artists-wrapper">
-        <div id="ship-container">
-            <img src="./img/illustration/illustration-7.svg" alt="" >
+<!-- START WRAPPER CODE -->
+<div id="artist-page-wrapper">
+        <!-- START SIDE NAV CODE -->
+    <nav id="side-nav">
+        <div id="side-nav-img">
+            <img src="../img/illustration/illustration-7.svg" class="triggerShip" alt="">
         </div>
-        <div id="artists-container">
+        <div class="side-nav-li">
             <ul>
                 <li><a href="strange-stuff-rec-artists-aby-fulani.html">ABY FULANI</a></li>
                 <li><a href="strange-stuff-rec-artists-ginger-apollo.html">GINGER APOLLO</a></li>
@@ -66,7 +70,126 @@
                 <li><a href="strange-stuff-rec-artists-ocelotl-inti.html">OCELOTL'INTI</a></li>
             </ul>
         </div>
-    </section>
+    </nav>
+    <!-- END SIDE NAV CODE -->
+    <!-- START ARTICLE CODE -->
+    <article id="artist-profil-container">
+            <!-- START IMG GALLERY CODE -->
+                <!-- START HEADER GALLERY -->
+            <section id="img-gallery">
+                <div id="header-gallery">
+                    <div class="header-gallery-item" id="gallery-controls">
+                        <span class="btn-arrow" id="arrow-left">&#8592;</span>
+                        <span class="btn-arrow" id="arrow-right">&#8594;</span>
+                    </div>
+                    <div class="header-gallery-item" id="gallery-grab-bar"></div>
+                    <div class="header-gallery-item" id="gallery-close-btn">
+                        <span class="closeBtn"></span>
+                    </div>
+                </div>
+                <!-- END HEADER GALLERY -->
+                <!-- START BODY GALLERY -->
+                <div id="img-container">
+                    <img src="../img/photos-artists/ginger-apollo1.jpg" class="my-img hidde-img" alt="">
+                    <img src="../img/photos-artists/ginger-apollo2.jpg" class="my-img hidde-img" alt="">
+
+             
+                </div>
+                <!-- END BODY GALLERY -->
+
+            </section>
+            <!-- END IMG GALLERY CODE -->
+
+            <!-- START ARTIST BIO CODE -->
+            <section class="article-profil-sections" id="artist-bio">
+                <h1>GINGER APOLLO</h1>
+                <p>Ginger Apollo moves accros his music
+                    exploration like a flying apple carrying
+                    her most precious sweet juice .
+                    Wheat germs located between
+                    Senegal,belgium and martinique but
+                    currently based in Paris, the producer
+                    and rapper armed in his garden of
+                    juicy fruits , got a huge bag of
+                    comtemplatif leads and melodies
+                    pairing perfeclty with his warmest
+                    rythm.</P>
+                <p>
+                    His green vegetable sound color can
+                    leave you , carefree as a quiet
+                    afternoon posted behind a water
+                    castle .
+                    Better be all ears .
+                    Hussshhhhh !!</p>
+            </section>
+            <!-- END ARTIST BIO CODE -->
+            <!-- START VIDEO ARTIST -->
+            <!-- <section class="article-profil-sections" id="artist-videos">
+                <h3>Videos</h3>
+                    <div id="videos-artist-container">
+                        <div class="video-item">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VNQrGYZiFyk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section> -->
+            <!-- END VIDEO ARTIST -->
+            <!-- START EMBEDDED BANDCAMP TRACK -->
+            <!-- <div class="article-profil-sections">
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=653721389/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://djmellg1.bandcamp.com/track/break-y0-neck">break y0 neck by DJ MELL G</a></iframe>
+            </div> -->
+            <!-- END EMBEDDED BANDCAMP TRACK -->
+            <!-- START AUDIO SECTION CODE -->
+            <section class="article-profil-sections" id="artist-audio">
+                <h3>STREAM LINKS</h3>
+                <!-- <div class="audio-item">
+                    <div class="play-icon-container">
+                        <span class="playBtn"></span>
+                    </div>
+                    <div class="audio-wave-container">
+                        <img src="./logos/social-soundcloud-logo-w-plain.svg" alt="">
+                    </div> -->
+                        <div class="audio-wave-container">
+                            <a href="https://soundcloud.com/jeunebissap" target="_blank">
+                                <img src="../img/logos/social-soundcloud-logo-w-plain.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="audio-wave-container">
+                            <a href="https://open.spotify.com/artist/0BF3FRKRl2NkFBW0Mh4ZFT?si=UgLQxV97SO2gldv178THVQ" target="_blank">
+                                <img src="../img/logos/social-spotify-logo-w-plain.svg" alt="">
+                            </a>
+                        </div>
+            </section>
+            <!-- END AUDIO SECTION CODE -->
+
+<!-- START SOCIAL MEDIA ICON CODE -->
+            <section class="article-profil-sections" id="artist-social">
+                <h3>Social</h3>
+                <div id="social-media-icons-container">
+                   
+                    <div class="social-media-icon" id="instagram-neon-icon">
+                        <a href="https://www.instagram.com/gingerapollo2021/" target="_blank">
+                            <img src="../icons/social-icons/social-instagram-strange-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+<!-- END SOCIAL MEDIA ICON CODE -->
+
+<!-- START DOWNLOAD PRESS KIT BTN -->
+            <!-- <section class="article-profil-sections" id="artist-press-kit">
+                <h3>Press Kit</h3>
+                <div class="press-kit-item">
+                    <a href="./press-kit-artists-pdf/aby-fulani-press-kit-2020.pdf" target="_blank">
+                        Aby Fulani - Press Kit
+                    </a>
+                    <span>&#9660;</span>
+                </div>
+            </section> -->
+<!-- END DOWNLOAD PRESS KIT BTN -->
+    </article>
+    <!-- END ARTICLE CODE -->
+</div>
+<!-- END WRAPPER CODE -->
 <!-- MODAL TOURS -->
 <section class="modal-window ui-widget-content" id="tours-container">
     <div class="header-modal">
@@ -151,16 +274,16 @@
     <!-- <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/abyfulani" title="Aby Fulani" target="_blank" style="color: #cccccc; text-decoration: none;">Aby Fulani</a> · <a href="https://soundcloud.com/abyfulani/sets/cosmogonic-tales-ep" title="Cosmogonic Tales EP" target="_blank" style="color: #cccccc; text-decoration: none;">Cosmogonic Tales EP</a></div> -->
     <script src="https://w.soundcloud.com/player/api.js" type="text/javascript" defer></script>
 </div>
-
 <!-- END SOUND CLOUD EMBEDDED -->
-
 <!-- START SCRIPTS -->
 <script src="../js/soundcloud-widget.js" defer></script>
+<script src="../js/galleryNextAndPrev.js" defer></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
 <script src="../js/toggleMenu.js" defer></script>
 <script src="../js/draggableAndResizable.js" defer></script>
 <script src="../js/closeModal.js" defer></script>
+<script src="../js/openSideNav.js" defer></script>
 <!-- END SCRIPTS -->
 </body>
 </html>

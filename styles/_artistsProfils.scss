@@ -225,7 +225,7 @@
             h1{
                 font-family: $font-display-title;
                 text-transform: uppercase;
-                margin: 0;
+                margin: 34.56px 0;
                 font-size: 30vw;
                 @media  only screen and (min-width:768px){
                 font-size: 15vw;
@@ -295,7 +295,7 @@
                     max-width: 100%;
                     display: flex;
                     flex-flow: row wrap;
-                    justify-content: space-between;
+                    justify-content: start;
 
                     .social-media-icon{
                         width: 96px;

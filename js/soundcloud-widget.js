@@ -9,7 +9,7 @@ let btnPlay = document.getElementById('radio-player-btn-play');
 let btnPause = document.getElementById('radio-player-btn-pause');
 let btnNext = document.getElementById('radio-player-btn-next');
 let btnLike = document.getElementById('radio-player-btn-like');
-let btnMute = document.getElementById('radio-player-btn-mute');
+let btnMute = document.getElementsByClassName('radio-player-btn-mute');
 let btnVolume = document.getElementById('radio-volume-selector');
 let btnClose = document.getElementById('radio-close-btn');
 let volumeRange = '';
@@ -83,19 +83,21 @@ let album = '';
                     volumeRange = btnVolume.value;
                     changeVolume(volumeRange, true);
                     });
-            btnMute.addEventListener('click', function(event){
-                widget.setVolume('0');
-                count +=1;
-                if (count >= 2){
-                    count = 0
-                    widget.setVolume(volumeRange);
-                        }
-                    });
-                btnClose.addEventListener('click',function(event){
-                    $('.illustration').fadeIn(5000);
-                    widget.pause();
-                    //fire then fct to choose random title.
-                });
+                    for (i=0; i<btnMute.length; i++){
+                        btnMute[i].addEventListener('click', function(event){
+                            widget.setVolume('0');
+                            count +=1;
+                            if (count >= 2){
+                                count = 0
+                                widget.setVolume(volumeRange);
+                                    }
+                                });
+                            btnClose.addEventListener('click',function(event){
+                                $('.illustration').fadeIn(5000);
+                                widget.pause();
+                                //fire then fct to choose random title.
+                            });
+                    }
             if (getVolume()==0){
             }
         });
